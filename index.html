@@ -36,10 +36,10 @@
   </head>
   <body class="">
     <header class="max-w-[1440px] mx-auto">
-      <nav class="lg:flex justify-between mx-[60px] my-[25px]">
+      <nav class="flex sm:flex-wrap justify-between  mt-5 mb-5">
         <div class="flex items-center gap-3">
           <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="" />
-          <div class="sm:flex md:flex gap-1">
+          <div class="md:flex gap-1">
             <h2 class="font-bold text-[#006747] hind-madurai-light">
               Emergency
             </h2>
@@ -59,19 +59,19 @@
           <button
             class="bg-[#41ff6b1a] px-9 text-black font-semibold text-[16px] py-3 rounded-[30px] flex justify-center items-center gap-3"
           >
-            <span>100</span
+            <span id="coin-text">100</span
             ><img class="w-[24px] h-[24px]" src="assets/coin.png" alt="" />
           </button>
           <button
             class="bg-[#00A63E] px-9 text-white font-semibold text-[16px] py-3 rounded-[30px]"
           >
-            <span>0</span> Copy
+            <span id="copy-btn">0</span> Copy
           </button>
         </div>
       </nav>
     </header>
     <section
-      class="max-w-[1440px] mx-auto bg-[#013223] flex justify-center items-center lg:py-3 sm:py-6"
+      class="max-w-[1440px] mx-auto bg-[#013223] flex justify-center items-center  lg:py-3 sm:py-6"
     >
       <div>
         <img
@@ -95,14 +95,13 @@
 
     <section
       id="service-section"
-      class="bg-[#DFEFFF] lg:w-11/12 w-3/12 grid lg:grid-cols-12  gap-4 max-w-[1440px] mx-auto"
-    >
+      class="bg-[#DFEFFF] lg:w-11/12  grid lg:grid-cols-12  gap-4 max-w-[1440px] mx-auto">
       <section
         id="service-box"
         class="col-span-9 grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4 p-8"
       >
         <!-- National Emergency Number -->
-        <div class="p-8 bg-white rounded-xl">
+        <div class="p-8 bg-white rounded-xl card-parant">
           <div class="flex justify-between items-center">
             <div class="">
               <div
@@ -116,14 +115,15 @@
             </div>
           </div>
           <h1
-            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3"
+            id="title"
+            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3 depertment-title"
           >
             National Emergency Number
           </h1>
           <p class="text-[#5C5C5C] text-[14px] hind-madurai-light">
             National Emergency
           </p>
-          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2">999</h1>
+          <h1 id="number" class="text-[#111111] font-bold text-lg mt-3 mb-2 depart-number">999</h1>
           <button
             class="bg-[#F2F2F2] px-6 text-[#5C5C5C] font-semibold text-[12px] py-2 rounded-[30px] flex justify-center items-center gap-3 mb-3"
           > All </button>
@@ -135,7 +135,7 @@
                 Copy
               </button>
               <button
-                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%]"
+              class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -158,14 +158,14 @@
             </div>
           </div>
           <h1
-            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3"
+            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3 depertment-title"
           >
            Police Helpline Number
           </h1>
           <p class="text-[#5C5C5C] text-[14px] hind-madurai-light">
             Police
           </p>
-          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2">999</h1>
+          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2 depart-number">999</h1>
           <button
             class="bg-[#F2F2F2] px-6 text-[#5C5C5C] font-semibold text-[12px] py-2 rounded-[30px] flex justify-center items-center gap-3 mb-3"
           >
@@ -178,7 +178,7 @@
                 Copy
               </button>
               <button
-                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%]"
+                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -201,14 +201,14 @@
             </div>
           </div>
           <h1
-            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3"
+            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3 depertment-title"
           >
             Fire Service Number
           </h1>
           <p class="text-[#5C5C5C] text-[14px] hind-madurai-light">
             Fire Service
           </p>
-          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2">999</h1>
+          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2 depart-number">999</h1>
           <button
             class="bg-[#F2F2F2] px-6 text-[#5C5C5C] font-semibold text-[12px] py-2 rounded-[30px] flex justify-center items-center gap-3 mb-3"
           >
@@ -221,7 +221,7 @@
                 Copy
               </button>
               <button
-                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%]"
+                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -244,14 +244,14 @@
             </div>
           </div>
           <h1
-            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3"
+            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3 depertment-title"
           >
            Ambulance Service
           </h1>
           <p class="text-[#5C5C5C] text-[14px] hind-madurai-light">
             Ambulance
           </p>
-          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2">1994-999999</h1>
+          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2 depart-number">1994-999999</h1>
           <button
             class="bg-[#F2F2F2] px-6 text-[#5C5C5C] font-semibold text-[12px] py-2 rounded-[30px] flex justify-center items-center gap-3 mb-3"
           >
@@ -264,7 +264,7 @@
                 Copy
               </button>
               <button
-                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%]"
+                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -287,14 +287,14 @@
             </div>
           </div>
           <h1
-            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3"
+            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3 depertment-title"
           >
             Women & Child Helpline
           </h1>
           <p class="text-[#5C5C5C] text-[14px] hind-madurai-light">
             Women & Child Helpline
           </p>
-          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2">109</h1>
+          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2 depart-number">109</h1>
           <button
             class="bg-[#F2F2F2] px-6 text-[#5C5C5C] font-semibold text-[12px] py-2 rounded-[30px] flex justify-center items-center gap-3 mb-3"
           >
@@ -307,7 +307,7 @@
                 Copy
               </button>
               <button
-                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%]"
+                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -330,14 +330,14 @@
             </div>
           </div>
           <h1
-            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3"
+            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3 depertment-title"
           >
             Anti-Corruption Helpline
           </h1>
           <p class="text-[#5C5C5C] text-[14px] hind-madurai-light">
             Anti-Corruption
           </p>
-          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2">106</h1>
+          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2 depart-number">106</h1>
           <button
             class="bg-[#F2F2F2] px-6 text-[#5C5C5C] font-semibold text-[12px] py-2 rounded-[30px] flex justify-center items-center gap-3 mb-3"
           >
@@ -350,7 +350,7 @@
                 Copy
               </button>
               <button
-                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%]"
+                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -373,14 +373,14 @@
             </div>
           </div>
           <h1
-            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3"
+            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3 depertment-title"
           >
            Electricity Helpline
           </h1>
           <p class="text-[#5C5C5C] text-[14px] hind-madurai-light">
             Electricity Outage
           </p>
-          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2">16216</h1>
+          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2 depart-number">16216</h1>
           <button
             class="bg-[#F2F2F2] px-6 text-[#5C5C5C] font-semibold text-[12px] py-2 rounded-[30px] flex justify-center items-center gap-3 mb-3"
           >
@@ -393,7 +393,7 @@
                 Copy
               </button>
               <button
-                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%]"
+                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -416,14 +416,14 @@
             </div>
           </div>
           <h1
-            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3"
+            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3 depertment-title"
           >
             Brac Helpline
           </h1>
           <p class="text-[#5C5C5C] text-[14px] hind-madurai-light">
             Brac
           </p>
-          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2">16445</h1>
+          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2 depart-number">16445</h1>
           <button
             class="bg-[#F2F2F2] px-6 text-[#5C5C5C] font-semibold text-[12px] py-2 rounded-[30px] flex justify-center items-center gap-3 mb-3"
           >
@@ -436,7 +436,7 @@
                 Copy
               </button>
               <button
-                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%]"
+                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -459,14 +459,14 @@
             </div>
           </div>
           <h1
-            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3"
+            class="text-[#111111] text-[16px] font-bold hind-madurai-light mt-3 depertment-title"
           >
             Bangladesh Railway Helpline 
           </h1>
           <p class="text-[#5C5C5C] text-[14px] hind-madurai-light">
             Bangladesh Railway
           </p>
-          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2">163</h1>
+          <h1 class="text-[#111111] font-bold text-lg mt-3 mb-2 depart-number">163</h1>
           <button
             class="bg-[#F2F2F2] px-6 text-[#5C5C5C] font-semibold text-[12px] py-2 rounded-[30px] flex justify-center items-center gap-3 mb-3"
           >
@@ -481,7 +481,7 @@
                 Copy
               </button>
               <button
-                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%]"
+                class="bg-[#00A63E] px-6 text-white font-semibold text-[12px] py-3 rounded-lg w-[48%] call-btn"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -491,23 +491,37 @@
         </div>
       </section>
       <aside
-        id="call-history"
-        class="bg-white col-span-3 mt-8 flex rounded-md shadow-lg justify-between p-8 mr-5"
-      >
-        <div>
-          <p class="text-[14px] text-[#111111] font-bold">
-            <i class="fa-regular fa-clock mr-2 mt-4"></i>Call History
-          </p>
-        </div>
-        <div>
-          <button
-            class="bg-[#00A63E] px-6 text-white font-semibold text-[16px] py-3 rounded-[30px]"
-          >
-            Clear
-          </button>
-        </div>
-      </aside>
-      
+  id="call-history"
+  class="mt-8 col-span-12 lg:col-span-3 mr-3
+         bg-white rounded-xl shadow "
+>
+  
+  <div class=" p-4 
+         flex  sm:flex-row 
+         justify-between  gap-4">
+         <!-- Text -->
+    <div>
+    <p class="text-[14px] text-[#111111] font-bold flex ">
+      <i class="fa-regular fa-clock mr-2"></i> Call History
+    </p>
+  </div>
+
+  <!-- Button -->
+  <div>
+    <button
+      id="history-clear-btn"
+      class="bg-[#00A63E] px-6 text-white font-semibold text-[14px] py-2 rounded-[30px] "
+    >
+      Clear
+    </button>
+  </div>
+  </div>
+  <div id="call-add-secton" >
+  
+  </div>
+</aside>
+
+      </section>
     </script>
     <script src="index.js"></script>
   </body>
