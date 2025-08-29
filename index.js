@@ -1,18 +1,17 @@
 
 let count = 0;
+let navcount = 0;
 const navHeart = document.getElementById("heart-btn");
 const hearts = document.querySelectorAll("#heart-icon");
 function heards() {
   count++;
   navHeart.innerText = count;
 }
-let totalCopy = 0;
-const copybtn = document.getElementById("heart-btn");
-const copCount = document.querySelectorAll("#copy-btn");
-function heards() {
+function copys() {
   count++;
-  copybtn.innerText = count;
+  navHeart.innerText = count;
 }
+
 for (let i = 0; i < hearts.length; i++) {
   hearts[i].onclick = heards;
 }
@@ -51,6 +50,15 @@ for (let callButton of callBtns) {
     }
   });
 }
+document.querySelectorAll('.copy-button').forEach(function(button) {
+      button.addEventListener('click', function () {
+        const navCopyBtn = Number(document.getElementById('nav-copy-btn').innerText);
+        let total = navCopyBtn + 1;
+        document.getElementById('nav-copy-btn').innerText = total; 
+      });
+    });
+
+
 function renderHistory() {
   const callAddSecton = getElement("call-add-secton");
   callAddSecton.innerHTML = "";
