@@ -1,11 +1,11 @@
 1.	## What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-     **Ans: getElementById: Selects one element by ID.**
-     **getElementsByClassName: Selects one element by Cless.**
-     **querySelector: Selects one element by frist  Cless.**
-     **querySelectorAll: Selects All element by frist  Cless**
+     **Ans: getElementById: Selects one element by ID.**<br>
+     **getElementsByClassName: Selects one element by Cless.**<br>
+     **querySelector: Selects one element by frist  Cless.**<br>
+     **querySelectorAll: Selects All element by frist  Cless**<br>
 
-2.	## How do you create and insert a new element into the DOM?##     
+2.	## How do you create and insert a new element into the DOM?    
      **Ans: document.createElement() and TagName**
 
 3.	## What is Event Bubbling and how does it work?
@@ -15,10 +15,10 @@
     **And: DOM এ Event Bubbling ঘটে, child element-এ ইভেন্ট trigger হলে parent-এ তা পৌঁছায়।**
 
 5.	## What is the difference between preventDefault() and stopPropagation() methods?
-     **Ans: preventDefault()**
-     **a.Stops the default browser action (like submitting a form, following a link, etc.)**
-     **b.Does NOT stop the event from bubbling to parent elements.**
+     **Ans: preventDefault()** <br>
+     **a.Stops the default browser action (like submitting a form, following a link, etc.)**<br>
+     **b.Does NOT stop the event from bubbling to parent elements.**<br>
 
-     **stopPropagation()**
-     **Stops the event from bubbling up to parent elements.**
-     **Does NOT stop the default browser action.**
+     **stopPropagation()**<br>
+     **Stops the event from bubbling up to parent elements.**<br>
+     **Does NOT stop the default browser action.**<br>
